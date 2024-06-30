@@ -1,59 +1,325 @@
 'use strict';
 
-
-
 /**
  * all music information
  */
 
 const musicData = [
   {
-    backgroundImage: "./assets/images/poster-1.jpg",
-    posterUrl: "./assets/images/poster-1.jpg",
-    title: "Happy Moments (Master)",
-    album: "No Spirit",
-    year: 2022,
-    artist: "No Spirit x Tonion",
-    musicPath: "./assets/music/music-1.mp3",
+    "songIndex": 0,
+    "backgroundImage": "./assets/images/poster-1.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "10 Hits",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "B Praak",
+    "musicPath": "./assets/music/10 hits - B Praak.mp3"
   },
   {
-    backgroundImage: "./assets/images/poster-2.jpg",
-    posterUrl: "./assets/images/poster-2.jpg",
-    title: "We Are Going To Be Ok (Master)",
-    album: "No Spirit",
-    year: 2022,
-    artist: "No Spirit x Jhove",
-    musicPath: "./assets/music/music-2.mp3",
+    "songIndex": 1,
+    "backgroundImage": "./assets/images/poster-2.jpg",
+    "posterUrl": "./assets/images/poster-2.jpg",
+    "title": "Abhi Mujh Mein Kahin",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Sonu Nigam",
+    "musicPath": "./assets/music/Abhi mujh mein kahin -Sonu Nigam.mp3"
   },
   {
-    backgroundImage: "./assets/images/poster-3.jpg",
-    posterUrl: "./assets/images/poster-3.jpg",
-    title: "Winter Meadow",
-    album: "No Spirit",
-    year: 2022,
-    artist: "No Spirit x  juniorodeo",
-    musicPath: "./assets/music/music-3.mp3",
+    "songIndex": 2,
+    "backgroundImage": "./assets/images/poster-3.jpg",
+    "posterUrl": "./assets/images/poster-3.jpg",
+    "title": "Bajlo Chutir Ghonta",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Shilajit Majumdar",
+    "musicPath": "./assets/music/Bajlo chutir ghonta -Shilajit Majumdar.mp3"
   },
   {
-    backgroundImage: "./assets/images/poster-4.jpg",
-    posterUrl: "./assets/images/poster-4.jpg",
-    title: "From Where We Started",
-    album: "No Spirit",
-    year: 2022,
-    artist: "No Spirit",
-    musicPath: "./assets/music/music-4.mp3",
+    "songIndex": 3,
+    "backgroundImage": "./assets/images/poster-4.jpg",
+    "posterUrl": "./assets/images/poster-4.jpg",
+    "title": "Bangla Adhunik Gaan",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Shreya Ghoshal",
+    "musicPath": "./assets/music/Bangla Adhunik Gaan - Shreya Ghoshal.mp3"
   },
   {
-    backgroundImage: "./assets/images/poster-5.jpg",
-    posterUrl: "./assets/images/poster-5.jpg",
-    title: "Where I Found You",
-    album: "No Spirit",
-    year: 2022,
-    artist: "No Spirit",
-    musicPath: "./assets/music/music-5.mp3",
+    "songIndex": 4,
+    "backgroundImage": "./assets/images/poster-5.jpg",
+    "posterUrl": "./assets/images/poster-5.jpg",
+    "title": "Behati Hawa Sa Tha O",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Shaan And Shantunu Moitra",
+    "musicPath": "./assets/music/Behati Hawa sa tha o -Shaan and Shantunu Moitra.mp3"
   },
+  {
+    "songIndex": 5,
+    "backgroundImage": "./assets/images/poster-1.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Chookar Mere Manko",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Kishore Kumar",
+    "musicPath": "./assets/music/Chookar mere manko - Kishore Kumar.mp3"
+  },
+  {
+    "songIndex": 6,
+    "backgroundImage": "./assets/images/poster-2.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Chunriya",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Falguni Pathak",
+    "musicPath": "./assets/music/Chunriya -Falguni Pathak.mp3"
+  },
+  {
+    "songIndex": 7,
+    "backgroundImage": "./assets/images/poster-3.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Ek Bat Batao",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "B. Praak",
+    "musicPath": "./assets/music/Ek Bat Batao -B. Praak.mp3"
+  },
+  {
+    "songIndex": 8,
+    "backgroundImage": "./assets/images/poster-4.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Evabeo Fire Asa Jay",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Chandabindu",
+    "musicPath": "./assets/music/Evabeo Fire asa jay - Chandabindu.mp3"
+  },
+  {
+    "songIndex": 9,
+    "backgroundImage": "./assets/images/poster-5.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Golemale Golemale Pirit Koiro Na",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Shreya Ghosal",
+    "musicPath": "./assets/music/Golemale Golemale Pirit Koiro Na -Shreya Ghosal.mp3"
+  },
+  {
+    "songIndex": 10,
+    "backgroundImage": "./assets/images/poster-1.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Holud Pakhi",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Cactus",
+    "musicPath": "./assets/music/Holud pakhi -Cactus.mp3"
+  },
+  {
+    "songIndex": 11,
+    "backgroundImage": "./assets/images/poster-2.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Jaane Kaise",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Kk",
+    "musicPath": "./assets/music/Jaane kaise -KK.mp3"
+  },
+  {
+    "songIndex": 12,
+    "backgroundImage": "./assets/images/poster-3.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Khereyiat",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Arijit Singh",
+    "musicPath": "./assets/music/Khereyiat -Arijit Singh.mp3"
+  },
+  {
+    "songIndex": 13,
+    "backgroundImage": "./assets/images/poster-4.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Khusi Ke Pal",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Arijit Singh And Shirley Setia",
+    "musicPath": "./assets/music/Khusi ke Pal -Arijit Singh and Shirley Setia.mp3"
+  },
+  {
+    "songIndex": 14,
+    "backgroundImage": "./assets/images/poster-5.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Ki Kore Bolbo Tomay",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Arijit Singh And Palak",
+    "musicPath": "./assets/music/Ki Kore Bolbo Tomay - Arijit Singh and Palak.mp3"
+  },
+  {
+    "songIndex": 15,
+    "backgroundImage": "./assets/images/poster-1.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Likhe Jo Khat Tujhe",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Mohammed Rafi",
+    "musicPath": "./assets/music/Likhe Jo Khat Tujhe -  Mohammed Rafi.mp3"
+  },
+  {
+    "songIndex": 16,
+    "backgroundImage": "./assets/images/poster-2.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Maine Dil Se Kaha",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Kk",
+    "musicPath": "./assets/music/Maine Dil Se Kaha -KK.mp3"
+  },
+  {
+    "songIndex": 17,
+    "backgroundImage": "./assets/images/poster-3.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Mayi Teri Chunariya Lehray",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Arijit Singh",
+    "musicPath": "./assets/music/Mayi teri chunariya lehray -Arijit singh.mp3"
+  },
+  {
+    "songIndex": 18,
+    "backgroundImage": "./assets/images/poster-4.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Meri Ma",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Shankar Mahadevan",
+    "musicPath": "./assets/music/Meri Ma -Shankar Mahadevan.mp3"
+  },
+  {
+    "songIndex": 19,
+    "backgroundImage": "./assets/images/poster-5.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Mone Pore Ruby Roy",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Arijit Singh",
+    "musicPath": "./assets/music/Mone pore ruby roy -Arijit Singh.mp3"
+  },
+  {
+    "songIndex": 20,
+    "backgroundImage": "./assets/images/poster-1.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Naina",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Arijit Singh",
+    "musicPath": "./assets/music/Naina -Arijit Singh.mp3"
+  },
+  {
+    "songIndex": 21,
+    "backgroundImage": "./assets/images/poster-2.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Papa Kehta Hain",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Udit Narayan",
+    "musicPath": "./assets/music/Papa Kehta Hain -Udit Narayan.mp3"
+  },
+  {
+    "songIndex": 22,
+    "backgroundImage": "./assets/images/poster-3.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Pehla Nasha",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Udit Narayan And Sadhna Sargam",
+    "musicPath": "./assets/music/Pehla Nasha -Udit Narayan and Sadhna Sargam.mp3"
+  },
+  {
+    "songIndex": 23,
+    "backgroundImage": "./assets/images/poster-4.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Sau Dard",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Sonu Nigam",
+    "musicPath": "./assets/music/Sau Dard -Sonu Nigam.mp3"
+  },
+  {
+    "songIndex": 24,
+    "backgroundImage": "./assets/images/poster-5.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Sei Tumi",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Ayub Bachchu",
+    "musicPath": "./assets/music/Sei tumi - Ayub Bachchu.mp3"
+  },
+  {
+    "songIndex": 25,
+    "backgroundImage": "./assets/images/poster-1.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Shuno Na",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Shan",
+    "musicPath": "./assets/music/Shuno Na -Shan.mp3"
+  },
+  {
+    "songIndex": 26,
+    "backgroundImage": "./assets/images/poster-2.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Tera Chera",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Adnan Sami",
+    "musicPath": "./assets/music/Tera Chera -Adnan Sami.mp3"
+  },
+  {
+    "songIndex": 27,
+    "backgroundImage": "./assets/images/poster-3.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Valolage",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Mohiner Ghoragulo",
+    "musicPath": "./assets/music/Valolage - Mohiner Ghoragulo.mp3"
+  },
+  {
+    "songIndex": 28,
+    "backgroundImage": "./assets/images/poster-4.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Ve Kamleya",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Arijit Singh And Shreya Ghosal",
+    "musicPath": "./assets/music/Ve Kamleya -Arijit Singh and Shreya Ghosal.mp3"
+  },
+  {
+    "songIndex": 29,
+    "backgroundImage": "./assets/images/poster-5.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Wada Raha",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Arnab And Shreya Ghosal",
+    "musicPath": "./assets/music/Wada Raha - Arnab and Shreya Ghosal.mp3"
+  },
+  {
+    "songIndex": 30,
+    "backgroundImage": "./assets/images/poster-1.jpg",
+    "posterUrl": "./assets/images/poster-1.jpg",
+    "title": "Woh Lamhe Woh Baatein",
+    "album": "Not Found",
+    "year": 2024,
+    "artist": "Atif Aslam",
+    "musicPath": "./assets/music/Woh Lamhe Woh Baatein - Atif Aslam.mp3"
+  }
 ];
 
+
+// Keep track of songs
+let songIndex;
 
 
 /**
